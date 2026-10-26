@@ -33,6 +33,8 @@ Compare three classic classifiers on a public dataset and see how well they pred
 
 ## How to read the results
 
+Note: the original 2023 report treated the 100% as the best result. The points below are my review of it now.
+
 - Decision trees and KNN fit this dataset very well; Naive Bayes was lower, which fits its assumption that features are independent while many of these features are strongly related.
 - A perfect score on a small public dataset is a warning sign, not a success. It usually means the classes are cleanly separable in this data, and it says little about real patients.
 - The study does not show that air pollution causes lung cancer, and it makes no clinical claim.
