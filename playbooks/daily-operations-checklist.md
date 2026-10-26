@@ -4,13 +4,13 @@
 
 ## Goal
 
-Catch small problems early, keep a record that checks happened, and make hand-over between people easy.
+Catch small problems early, keep a record that the checks happened, and make hand-over between people easy.
 
 ## How to run it
 
-- One owner per row and one backup.
-- Done each working day at a fixed time; findings go into the ticket system, not into memory.
-- A short sign-off (initials and time) so the routine is auditable.
+- One owner per row, and one backup.
+- Do it each working day at a fixed time. Findings go into the ticket system, not into memory.
+- Sign off with initials and time, so the routine can be audited.
 
 ## Checklist
 

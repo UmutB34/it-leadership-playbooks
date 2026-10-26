@@ -1,19 +1,19 @@
 # Standardizing IT across several sites
 
-*How to bring three campuses or offices onto one way of working. Anonymized method from a multi-campus environment.*
+*How to bring three campuses or offices onto one way of working. This is an anonymized method from a multi-campus environment.*
 
-## Goal
+## What I'm aiming for
 
-One standard stack, one directory, one backup approach and one support model across sites, so that people, spares and skills are interchangeable.
+One standard stack, one directory, one backup approach and one support model across all sites. Then people, spares and skills can move between them.
 
 ## Method
 
-1. **Benchmark your own sites.** Compare them in numbers: servers, clients, concurrent users, storage, backup method, wireless, firewall features. A comparison between sites you already run is the cheapest benchmark you can get.
-2. **Define the target stack.** Virtualization with clustering, shared storage, disk-based backup, managed wireless, one firewall family with logging.
+1. **Benchmark your own sites.** Compare them in numbers: servers, clients, concurrent users, storage, backup method, wireless and firewall features. Comparing sites you already run is the cheapest benchmark you can get.
+2. **Define the target stack.** Virtualization with clustering, shared storage, disk-based backup, managed wireless, and one firewall family with logging.
 3. **Rank by risk reduced.** Start where one change removes the most risk or cost.
-4. **Join identities.** Bring user accounts into one domain structure so access, policy and support are uniform.
-5. **Standardize operations.** Common naming, documentation, update rules, backup checks and support routines.
-6. **Frame each change as a benefit.** Faster access for teachers, fewer outages, simpler support; not a technology list.
+4. **Join identities.** Bring user accounts into one domain structure so access, policy and support are the same everywhere.
+5. **Standardize operations.** Use common naming, documentation, update rules, backup checks and support routines.
+6. **Frame each change as a benefit.** Say faster access for teachers, fewer outages and simpler support. Don't hand people a list of technology.
 
 ## Reference stack (illustrative)
 
@@ -29,13 +29,13 @@ One standard stack, one directory, one backup approach and one support model acr
 
 ## Law and logging
 
-Where national law requires internet-access logs with a trusted time stamp, the firewall, guest network and log store are designed together. Guest access is an identity problem: who is allowed, who is recorded, who is responsible.
+Some countries require internet-access logs with a trusted time stamp. Where that applies, design the firewall, guest network and log store together. Guest access is an identity problem: who is allowed, who is recorded and who is responsible.
 
 ## Practices that helped
 
 - Describe the current state in numbers before recommending anything.
 - Compare offers on total cost over the licence period, including how high-availability licensing works.
-- Put installation and configuration scope into the offer so the price covers the work, not only the equipment.
+- Put installation and configuration scope into the offer, so the price covers the work and not only the equipment.
 - Hand over with documentation and a short training session.
 
 ## Measures

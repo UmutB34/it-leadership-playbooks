@@ -4,7 +4,7 @@
 
 ## Goal
 
-Every person gets a working, secure, current device quickly, wherever they are, and IT always knows what exists and in what state.
+Everyone gets a working, secure, current device quickly, wherever they are, and IT always knows what exists and what state it is in.
 
 ## Lifecycle
 
@@ -20,23 +20,23 @@ Every person gets a working, secure, current device quickly, wherever they are, 
 
 ## Device management
 
-- One management platform for all supported operating systems, with compliance rules that block access from non-compliant devices.
-- Identity and device are linked: access depends on who you are and on whether the device is healthy.
+- Use one management platform for all supported operating systems. Compliance rules block access from non-compliant devices.
+- Identity and device are linked. Access depends on who you are and on whether the device is healthy.
 - Mobile devices follow the same enrolment and compliance model for mail and files.
 
 ## Operating system and application updates
 
-Updates follow deployment rings (pilot, early, broad). Required applications are pushed; optional ones come from a self-service catalogue. See patch-management.md.
+Updates follow deployment rings (pilot, early, broad). Required applications are pushed, and optional ones come from a self-service catalogue. See patch-management.md.
 
 ## Sites abroad and events
 
-- A standard travel kit: pre-configured laptops, secure connectivity, collaboration tools, spare parts.
+- A standard travel kit: pre-configured laptops, secure connectivity, collaboration tools and spare parts.
 - A checklist before departure and a hand-back procedure after return.
 - A named remote support contact for the whole trip.
 
 ## Records
 
-One asset inventory covers hardware, software and licences. It is updated at purchase, hand-out, return and disposal, and feeds the budget and audits.
+One asset inventory covers hardware, software and licences. I update it at purchase, hand-out, return and disposal. It feeds the budget and audits.
 
 ## Measures
 

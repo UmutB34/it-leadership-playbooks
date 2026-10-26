@@ -1,10 +1,10 @@
 # IT service management and the service desk
 
-*An operating model that works for a company of a few hundred people. Tool-neutral.*
+*An operating model that works for a company of a few hundred people. It is tool-neutral.*
 
 ## Goal
 
-Make IT a service people can rely on: requests are easy to raise, incidents are fixed in a predictable time, changes are controlled, and management can see how the service performs.
+IT should be a service people can rely on. Requests are easy to raise, incidents get fixed in a predictable time, changes are controlled, and management can see how the service performs.
 
 ## Core processes
 
@@ -18,7 +18,7 @@ Make IT a service people can rely on: requests are easy to raise, incidents are 
 
 ## Priority
 
-Priority comes from **impact** (how many people and how critical) and **urgency** (how fast it must be fixed). A simple matrix keeps decisions consistent and removes arguments.
+Priority comes from impact (how many people are affected and how critical it is) and urgency (how fast it must be fixed). A simple matrix keeps decisions consistent and ends the arguments.
 
 ## Service levels (illustrative)
 
@@ -29,25 +29,25 @@ Priority comes from **impact** (how many people and how critical) and **urgency*
 | Normal | 4 working hours | 3 working days |
 | Low | 1 working day | 5 working days |
 
-## Making it easy
+## Making it easy to use
 
 - One entry point (portal, e-mail, phone) feeding one queue.
-- **Self-service password reset** to remove the most common ticket.
-- A short knowledge base, written from real tickets, reviewed quarterly.
+- Self-service password reset, to remove the most common ticket.
+- A short knowledge base written from real tickets and reviewed quarterly.
 - Standard request forms with approvals built in.
 
 ## Measures that matter
 
 - First-response and resolution time against target.
 - Reopened tickets and repeat incidents.
-- Tickets per user and top categories (where to automate or train).
+- Tickets per user and top categories, which show where to automate or train.
 - Availability of key services and downtime hours.
 - User satisfaction from a one-question survey on closure.
 
 ## Reporting
 
-A monthly one-page view for management: volumes, performance against target, top drivers, major incidents with lessons, and improvements planned. The same figures roll into the yearly IT scorecard.
+Management gets a monthly one-page view: volumes, performance against target, top drivers, major incidents with lessons, and planned improvements. The same figures roll into the yearly IT scorecard.
 
 ## Continual improvement
 
-Each quarter, pick the top three ticket categories and decide: fix the cause, automate, or document. Review results the next quarter.
+Each quarter I pick the top three ticket categories and decide for each one whether to fix the cause, automate, or document. The next quarter I review the results.

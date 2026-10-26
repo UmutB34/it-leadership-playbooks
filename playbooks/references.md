@@ -1,6 +1,6 @@
 # References and frameworks used
 
-Public standards and frameworks that these playbooks align with. Use them as the vocabulary when talking to auditors, leadership and providers.
+These are the public standards and frameworks the playbooks line up with. I use them as shared vocabulary when talking to auditors, leadership and providers.
 
 | Topic | Framework or standard |
 |---|---|
@@ -20,10 +20,10 @@ Public standards and frameworks that these playbooks align with. Use them as the
 
 ## How to use them
 
-- Pick the framework your auditor or customer already uses and map your controls to it once.
+- Pick the framework your auditor or customer already uses, and map your controls to it once.
 - Keep one evidence set that serves several frameworks.
-- Prefer the plain-language description of a control over its clause number when talking to non-specialists.
+- With non-specialists, describe a control in plain language rather than by clause number.
 
 ## Note
 
-These notes are practitioner summaries, not legal or certification advice.
+These are practitioner notes, not legal or certification advice.

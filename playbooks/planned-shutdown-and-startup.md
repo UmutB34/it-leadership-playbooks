@@ -1,17 +1,17 @@
 # Planned shutdown and startup
 
-*A safe order for switching an IT environment off and on: maintenance, power work, a move, or a recovery exercise.*
+*A safe order for switching an IT environment off and on, for maintenance, power work, a move or a recovery exercise.*
 
-## Goal
+## What I want out of it
 
-Bring everything down without data loss and bring everything back up in an order where each service finds what it depends on.
+Bring everything down without losing data. Then bring everything back up in an order where each service finds what it depends on.
 
 ## Principles
 
-1. **Dependencies decide the order.** Shut down from the top (applications) to the bottom (storage and network); start up in the reverse order.
-2. **Write it down once, test it, keep it reachable.** The runbook lives where it can be read when systems are down.
-3. **One owner and one communicator.** Someone runs the steps, someone tells the business.
-4. **Check, do not assume.** Every step has a verification.
+1. **Dependencies decide the order.** Shut down from the top (applications) to the bottom (storage and network). Start up in the reverse order.
+2. **Write it down once, test it, keep it reachable.** The runbook has to live somewhere you can read it when systems are down.
+3. **One owner and one communicator.** One person runs the steps and another tells the business.
+4. **Check, don't assume.** Every step has a verification.
 
 ## Typical order
 
@@ -29,13 +29,15 @@ Bring everything down without data loss and bring everything back up in an order
 ## Checklists
 
 **Before:** backup verified, contacts informed, change approved, runbook open, rollback decided.
+
 **During:** each step confirmed, time recorded, issues logged.
+
 **After:** service checks passed, monitoring green, users informed, notes updated.
 
 ## After a power event
 
-Start only after storage and network are stable, bring services up in the order above, and check data integrity before opening to users.
+Start only once storage and network are stable. Bring services up in the order above. Check data integrity before you open to users.
 
-## Why it matters
+## Why bother
 
-Most serious start-up problems come from the wrong order or from a missing dependency note. A short, tested runbook turns a risky night into a routine one.
+Most serious start-up problems come from the wrong order or a missing dependency note. A short, tested runbook turns a risky night into a routine one.

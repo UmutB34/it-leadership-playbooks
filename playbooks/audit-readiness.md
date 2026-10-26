@@ -2,13 +2,11 @@
 
 *How to be ready for an internal or external IT audit without a scramble.*
 
-## Goal
-
-Answer audit questions quickly, accurately and with proof, and turn every observation into a tracked improvement.
+The aim is to answer audit questions quickly, accurately and with proof, and to turn every observation into a tracked improvement.
 
 ## Build an evidence map
 
-For each control the auditor is likely to ask about, record: what the control is, who owns it, what evidence proves it, and how often the evidence is produced.
+For each control the auditor is likely to ask about, write down four things: what the control is, who owns it, what evidence proves it, and how often that evidence is produced.
 
 | Area | Typical question | Evidence |
 |---|---|---|
@@ -23,13 +21,13 @@ For each control the auditor is likely to ask about, record: what the control is
 
 ## Answering well
 
-Use three parts for every answer: **what we do**, **how it works**, **where the proof is**. Short, factual, and no promises beyond what exists.
+Every answer has three parts: what we do, how it works, and where the proof is. Keep it short and factual, and don't promise anything beyond what exists.
 
 ## Working with auditors
 
-- Agree scope, dates and contacts at the start; keep one person as the point of contact.
+- Agree scope, dates and contacts at the start. Keep one person as the point of contact.
 - Give evidence in the form asked for, from one shared folder.
-- Log every question and answer so repeated questions are quick next time.
+- Log every question and answer, so repeated questions are quick next time.
 - Clarify unclear questions early instead of guessing.
 
 ## After the audit
@@ -42,10 +40,10 @@ Use three parts for every answer: **what we do**, **how it works**, **where the 
 
 - Keep the evidence map current as part of normal operations.
 - Do a light self-assessment each quarter against the same questions.
-- Treat policy documents as living: review dates, owners and version history.
+- Treat policy documents as living: keep review dates, owners and version history up to date.
 
 ## Measures
 
 - Time to answer a standard audit request.
 - Open actions by age.
-- Controls with current evidence vs controls without.
+- Controls with current evidence versus controls without.

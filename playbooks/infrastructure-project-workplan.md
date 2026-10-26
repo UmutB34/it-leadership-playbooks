@@ -1,10 +1,10 @@
 # Infrastructure project work plan and team roster
 
-*A method for running a multi-week infrastructure change (for example a network renewal) with a small team.*
+*How I run a multi-week infrastructure change, such as a network renewal, with a small team.*
 
-## Goal
+## What I want out of it
 
-Make it clear every week who does what, where they work and who covers whom, so the change finishes on time without stressing the business.
+Every week it should be clear who does what, where they work and who covers for whom. That way the change finishes on time and the business doesn't feel it.
 
 ## Work plan
 
@@ -17,30 +17,30 @@ Make it clear every week who does what, where they work and who covers whom, so 
 
 ## Weekly team roster
 
-A simple table with the team down the side and each week across the top. For each cell mark one of:
+Make a simple table. Put the team down the side and the weeks across the top. In each cell, mark one of these:
 
-- **Remote.** Works from home.
-- **Hybrid.** Part on site, part remote.
-- **Remote with on-site on demand.** Available to come in when needed.
+- Remote: works from home.
+- Hybrid: part on site, part remote.
+- Remote with on-site on demand: can come in when needed.
 
-The roster answers three questions at a glance: who is on site at the critical moments, who is the backup for each task, and when the team is thin.
+The roster tells you three things at a glance: who is on site at the critical moments, who backs up each task, and when the team is thin.
 
 ## Principles
 
-- One named owner per work package and one backup.
-- Critical steps (the actual switch) always have an on-site lead.
-- Remote work is planned, not accidental: connectivity and access are tested beforehand.
-- A daily short status and a weekly written summary for management.
-- Acceptance criteria written before the work starts.
+- Each work package has one named owner and one backup.
+- Critical steps, like the actual switch, always have a lead on site.
+- Remote work is planned, not accidental. Connectivity and access are tested beforehand.
+- Keep a short daily status and a written weekly summary for management.
+- Write the acceptance criteria before the work starts.
 
 ## Risks to manage
 
-- Single points of knowledge: the one person who understands a system.
+- Single points of knowledge, meaning the one person who understands a system.
 - Overlapping leave during cut-over weeks.
-- Remote access that fails when the office network is down: provide an independent path.
+- Remote access that fails when the office network is down. Provide an independent path.
 
 ## Measures
 
 - Work packages finished on plan.
-- Issues found at acceptance versus after.
+- Issues found at acceptance versus after it.
 - Days with a gap in cover.

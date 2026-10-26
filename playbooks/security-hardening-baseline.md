@@ -1,10 +1,8 @@
 # Security hardening baseline
 
-*A layered set of controls for a company of a few hundred people. Generic, vendor-neutral.*
+*A layered set of controls for a company of a few hundred people. Generic and vendor-neutral.*
 
-## Goal
-
-Make the common attacks fail or become visible, using controls a small team can run every day.
+The aim is simple: make the common attacks fail, or at least make them visible, using controls a small team can run every day.
 
 ## Layers
 
@@ -23,11 +21,11 @@ Make the common attacks fail or become visible, using controls a small team can 
 
 ## How to roll it out
 
-1. **Measure first.** Know which controls exist and where gaps are.
-2. **Pick the top five** by risk reduced for effort spent.
-3. **Change one thing at a time**, with a pilot group and a rollback.
-4. **Tell people why**, in plain language, before the change.
-5. **Measure again** and report the movement.
+1. Measure first. Find out which controls exist and where the gaps are.
+2. Pick the top five by risk reduced for effort spent.
+3. Change one thing at a time, with a pilot group and a rollback.
+4. Tell people why, in plain language, before the change.
+5. Measure again and report the movement.
 
 ## What good looks like
 
@@ -45,4 +43,4 @@ Make the common attacks fail or become visible, using controls a small team can 
 
 ## Compliance links
 
-The baseline maps to common frameworks (ISO/IEC 27001 controls, NIST Cybersecurity Framework, CIS Controls) and to national data protection requirements, so one set of evidence serves several reviews.
+The baseline maps to common frameworks (ISO/IEC 27001 controls, NIST Cybersecurity Framework, CIS Controls) and to national data protection requirements. That way one set of evidence serves several reviews.

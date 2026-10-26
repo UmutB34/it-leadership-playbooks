@@ -35,7 +35,7 @@
 ## Choosing well
 
 - Prefer outcomes to activities.
-- Keep the card short; each extra KPI weakens the rest.
+- Keep the card short. Each extra KPI weakens the rest.
 - Take evidence from systems, not from a spreadsheet someone fills in.
 - Pair every delivery KPI with a stability KPI.
 - Link KPIs to company-level themes (for example risk, governance, environment) when the organization reports on them.
