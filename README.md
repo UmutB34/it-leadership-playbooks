@@ -59,13 +59,13 @@ Coursework from an MSc in Computer Engineering, presented as such: [academic](ac
 
 ## Related
 
-- [enterprise-infrastructure-lab](https://github.com/UmutB34/enterprise-infrastructure-lab): layered architecture, quality engineering and agent-engine design for a small engineering lab.
-- [security-operations-toolkit](https://github.com/UmutB34/security-operations-toolkit): defensive, read-only checks for a domain's external security posture.
+- [enterprise-infrastructure-lab](https://github.com/UmutBecan/enterprise-infrastructure-lab): layered architecture, quality engineering and agent-engine design for a small engineering lab.
+- [security-operations-toolkit](https://github.com/UmutBecan/security-operations-toolkit): defensive, read-only checks for a domain's external security posture.
 - [Korantix](https://korantix.io): domain and e-mail security monitoring.
 
 ## About
 
-Umut Becan. IT infrastructure, security and service operations. [LinkedIn](https://www.linkedin.com/in/umutbecan)
+Umut Becan. IT infrastructure, security and service operations. [LinkedIn](https://www.linkedin.com/in/umutbecan) Contact: destek@korantix.io
 
 ## Sanitization
 
