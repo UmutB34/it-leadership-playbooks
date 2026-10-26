@@ -1,0 +1,7 @@
+KPI,Definition,Formula,Target,Frequency,Owner,Source,Last value,Trend
+First response time,Time from ticket creation to first reply,median(first reply - created),,Weekly,Service desk lead,Ticket system,,
+Resolution within SLA,Share of tickets closed inside SLA,closed in SLA / closed,,Monthly,Service desk lead,Ticket system,,
+Patch compliance,Devices on current patch level,patched / in scope,,Monthly,Endpoint owner,Patch tool,,
+Backup restore success,Restore tests passed,passed / tests,,Monthly,Infrastructure owner,Test records,,
+Open critical vulnerabilities,Critical findings past due,count past due,,Monthly,Security owner,Scanner,,
+Budget variance,Actual versus plan,(actual - plan) / plan,,Monthly,IT manager,Finance report,,

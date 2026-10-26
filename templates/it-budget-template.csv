@@ -1,0 +1,11 @@
+Category,Line item,Type (CAPEX/OPEX),Driver (per user/per device/fixed),Unit cost,Quantity,Annual cost,Contract end,Owner,Notes
+Licensing,Productivity suite,OPEX,per user,,,,,,
+Licensing,Security tooling,OPEX,per device,,,,,,
+Infrastructure,Server and storage refresh,CAPEX,fixed,,,,,,
+Infrastructure,Network equipment,CAPEX,fixed,,,,,,
+Services,Managed service contract,OPEX,fixed,,,,,,
+Services,Support and maintenance,OPEX,fixed,,,,,,
+End-user,Laptops and peripherals,CAPEX,per user,,,,,,
+Telecom,Internet and mobile,OPEX,fixed,,,,,,
+People,Training and certification,OPEX,per person,,,,,,
+Reserve,Contingency (suggest 5-10%),OPEX,fixed,,,,,,
