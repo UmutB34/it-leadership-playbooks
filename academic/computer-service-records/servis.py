@@ -9,6 +9,7 @@ stock and a few daily reports. Standard library only (sqlite3).
 """
 import argparse
 import calendar
+import csv
 import os
 import shutil
 import sqlite3
@@ -324,6 +325,58 @@ class Shop:
             " WHERE substr(j.received_at,1,7)=? GROUP BY p.id ORDER BY revenue DESC",
             (month,)).fetchall()
 
+    # ---- Excel in, Excel out ---------------------------------------------------
+    # Excel saves sheets as CSV; in Turkish-language Excel the separator is ';'
+    # and the file starts with a byte-order mark. Both are handled here.
+    @staticmethod
+    def read_sheet(path):
+        raw = Path(path).read_text(encoding="utf-8-sig")
+        first = raw.splitlines()[0] if raw.strip() else ""
+        delim = ";" if first.count(";") > first.count(",") else ","
+        rows = list(csv.DictReader(raw.splitlines(), delimiter=delim))
+        return [{(k or "").strip().lower(): (v or "").strip() for k, v in r.items()} for r in rows]
+
+    def import_sheet(self, kind, path):
+        """Import customers, devices or parts. Bad rows are reported, good rows are kept."""
+        rules = {"customers": ("name", "phone"), "devices": ("phone", "kind"),
+                 "parts": ("code", "name", "buy", "sell")}
+        if kind not in rules:
+            raise ShopError(f"import kind must be one of: {', '.join(rules)}")
+        rows = self.read_sheet(path)
+        if rows and any(c not in rows[0] for c in rules[kind]):
+            raise ShopError(f"the sheet needs columns: {', '.join(rules[kind])} "
+                            f"(found: {', '.join(k for k in rows[0] if k)})")
+        added, problems = 0, []
+        for line, r in enumerate(rows, start=2):          # line 1 is the header
+            try:
+                if kind == "customers":
+                    self.add_customer(r["name"], r["phone"], r.get("address") or None, r.get("note") or None)
+                elif kind == "devices":
+                    self.add_device(r["phone"], r["kind"], r.get("brand") or None, r.get("model") or None,
+                                    r.get("serial") or None, r.get("accessories") or None)
+                else:
+                    self.add_part(r["code"], r["name"], money(r["buy"]), money(r["sell"]),
+                                  int(r.get("stock") or 0), int(r.get("min") or 0))
+                added += 1
+            except (ShopError, ValueError) as err:
+                problems.append(f"line {line}: {err}")
+        return added, problems
+
+    def export_jobs(self, path):
+        rows = self.db.execute(
+            "SELECT j.id, j.received_at, j.promised_at, j.delivered_at, j.status, c.name, c.phone,"
+            " d.kind, d.brand, d.model, d.serial_no, j.complaint, j.diagnosis, j.technician"
+            " FROM jobs j JOIN devices d ON d.id=j.device_id JOIN customers c ON c.id=d.customer_id"
+            " ORDER BY j.id").fetchall()
+        with open(path, "w", newline="", encoding="utf-8-sig") as fh:   # BOM so Excel reads accents
+            w = csv.writer(fh, delimiter=";")
+            w.writerow(["job", "received", "promised", "delivered", "status", "customer", "phone", "kind",
+                        "brand", "model", "serial", "complaint", "diagnosis", "technician", "total", "paid"])
+            for r in rows:
+                t = self.totals(r["id"])
+                w.writerow(list(r) + [fmt(t["total"]), fmt(t["paid"])])
+        return len(rows)
+
     def receipt(self, job_id):
         job = self.job(job_id)
         d = self.db.execute("SELECT d.*, c.name, c.phone FROM devices d JOIN customers c"
@@ -439,6 +492,10 @@ def build_parser():
     w.add_argument("who")
     h = sub.add_parser("history", help="all jobs of a customer"); h.add_argument("phone")
     st = sub.add_parser("stock", help="stock levels"); st.add_argument("--low", action="store_true")
+    im = sub.add_parser("import", help="load customers, devices or parts from an Excel sheet saved as CSV")
+    im.add_argument("kind", choices=["customers", "devices", "parts"]); im.add_argument("file")
+    ex = sub.add_parser("export", help="write all jobs to a CSV file that opens in Excel")
+    ex.add_argument("file")
     r = sub.add_parser("report", help="daily takings or part usage")
     rs = r.add_subparsers(dest="sub", required=True)
     rd = rs.add_parser("daily"); rd.add_argument("day", nargs="?")
@@ -508,6 +565,13 @@ def run(args, out=print):
         for r in rows:
             flag = "  <-- reorder" if r["stock"] <= r["min_stock"] else ""
             out(f"{r['code']:<8}{r['name']:<26}stock {r['stock']:>3} (min {r['min_stock']}){flag}")
+    elif cmd == "import":
+        added, problems = shop.import_sheet(args.kind, args.file)
+        out(f"{added} {args.kind} imported, {len(problems)} row(s) skipped")
+        for p in problems:
+            out(f"  {p}")
+    elif cmd == "export":
+        out(f"{shop.export_jobs(args.file)} job(s) written to {args.file}")
     elif cmd == "report" and sub == "daily":
         rep = shop.daily_report(args.day)
         out(f"{rep['day']}: {rep['received']} received, {rep['delivered']} delivered")

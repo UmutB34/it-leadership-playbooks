@@ -1,6 +1,6 @@
 # Computer repair shop records
 
-A field note from a course project at Sakarya University. The system kept the records of a computer repair service in a Microsoft Access database. Everything was typed in by hand at the counter: customer details, the device, photos of the parts, the warranty period, and the price of each part.
+A field note from a course project at Sakarya University. The system kept the records of a computer repair service in a Microsoft Access database. It worked like a small asset manager: the lists of customers, devices and parts came in from Excel sheets, and the rest was typed in at the counter, including the photos of the parts, the warranty period and the price of each part.
 
 This folder holds a runnable version of that design, so you can try the logic without Access. It uses SQLite and the Python standard library only. All names and numbers in the sample data are made up.
 
@@ -40,6 +40,19 @@ A few decisions that mattered:
 - **Money is stored as whole units of the smallest coin,** not as decimals, so totals never drift by a cent.
 - **Photos are files next to the database;** the table stores the file name. The database stays small.
 
+## Excel in, Excel out
+
+Shops already have their lists in spreadsheets, so the first job is getting them in. Save the sheet as CSV and import it:
+
+```text
+python servis.py import customers sample/customers.csv    # name, phone, address, note
+python servis.py import devices   sample/devices.csv      # phone, kind, brand, model, serial, accessories
+python servis.py import parts     sample/parts.csv        # code, name, buy, sell, stock, min
+python servis.py export jobs.csv                          # every job, opens in Excel
+```
+
+Good rows are kept and bad rows are listed with their line number (a phone number that already exists, a device for a customer that is not there, a price that is not a number). Turkish-language Excel saves CSV with semicolons and a byte-order mark; both are handled, and the export is written the same way so accented letters open correctly.
+
 ## Try it
 
 ```text
@@ -77,7 +90,7 @@ The database file is `servis.db` in the current folder, or whatever you set with
 python -m unittest -v
 ```
 
-The tests cover the rules that cost money when they are wrong: status order, stock and overselling, payment limits, delivery with debt, warranty dates, cancelled jobs, and exact money arithmetic.
+The tests cover the rules that cost money when they are wrong: status order, stock and overselling, payment limits, delivery with debt, warranty dates, cancelled jobs and exact money arithmetic, plus the Excel import and export.
 
 ## What I would change today
 

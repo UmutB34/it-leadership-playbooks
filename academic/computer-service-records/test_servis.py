@@ -122,6 +122,32 @@ class ShopTests(unittest.TestCase):
         finally:
             other.db.close()
 
+    def test_excel_import_handles_semicolons_bom_and_bad_rows(self):
+        base = Path(servis.__file__).parent / "sample"
+        added, problems = self.shop.import_sheet("customers", base / "customers.csv")
+        self.assertEqual(added, 2)
+        self.assertEqual(len(problems), 1)
+        self.assertIn("line 4", problems[0])               # the duplicate phone
+        added, problems = self.shop.import_sheet("devices", base / "devices.csv")
+        self.assertEqual((added, len(problems)), (2, 1))   # unknown customer rejected
+        added, problems = self.shop.import_sheet("parts", base / "parts.csv")
+        self.assertEqual((added, len(problems)), (2, 1))   # 'abc' is not a price
+        self.assertEqual(self.shop.part("fan15")["sell_price"], 30000)
+
+    def test_import_reports_missing_columns(self):
+        bad = Path(self.tmp.name) / "bad.csv"
+        bad.write_text("name,telephone\nX,1\n", encoding="utf-8")
+        with self.assertRaises(ShopError):
+            self.shop.import_sheet("customers", bad)
+
+    def test_export_opens_in_excel(self):
+        self.ready_job()
+        out = Path(self.tmp.name) / "jobs.csv"
+        self.assertEqual(self.shop.export_jobs(out), 1)
+        raw = out.read_bytes()
+        self.assertTrue(raw.startswith(b"\xef\xbb\xbf"))     # BOM so Excel reads accents
+        self.assertIn(b"Test Customer", raw)
+
     def test_photo_is_copied_next_to_database(self):
         s = self.shop
         pic = Path(self.tmp.name) / "old.jpg"
