@@ -1,0 +1,4 @@
+Business unit,Service,Users (approx),Max outage (hours),Read-only acceptable (Y/N),Fixed peaks / blackout dates,Worst-case concern,Decision contact,Tier (T0-T3),Wave,Window,Notes
+Example: Finance,File share,,2,Y,Month-end close,Locked period files,Head of unit,T2,2,Weekend,
+Example: Field operations,Telephone,,0,N,Always on,Missed safety calls,Shift lead,T0,3,Parallel run,
+Example: HR,Mail,,8,Y,Payroll week,Delayed payroll mail,Head of unit,T2,1,Evening,
