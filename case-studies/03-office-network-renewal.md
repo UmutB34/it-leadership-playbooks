@@ -4,14 +4,14 @@
 
 ## When renewal is the right call
 
-Equipment can keep working and still carry rising risk: vendor support has ended, wireless was sized for fewer simultaneous users than today, and every incident takes time the team needs elsewhere. The framing for management is that the risk of waiting has become larger than the cost of renewing.
+Equipment can keep working and still carry growing risk. Vendor support has ended. Wireless was sized for fewer simultaneous users than you have today. Every incident eats time the team needs elsewhere. When I put this to management, I say that the risk of waiting has become bigger than the cost of renewing.
 
 ## Constraints to state up front
 
 - The office must keep working, or the cut-over window must be agreed with the business.
-- A small IT team plus a project manager.
-- Mixed cabling, telephony, wireless and applications with different tolerance for outages.
-- A fixed capital budget approved through the normal yearly cycle.
+- The team is small: IT staff plus a project manager.
+- Cabling, telephony, wireless and applications are mixed, and each tolerates outages differently.
+- The capital budget is fixed and approved through the normal yearly cycle.
 
 ## Options
 
@@ -23,15 +23,15 @@ Equipment can keep working and still carry rising risk: vendor support has ended
 
 ## How to make the decision
 
-- A one-page document: current state, problems, goals and scope, in non-technical language.
-- Presentations from more than one integrator and vendor, judged on support terms, licence model, replacement cycle and total cost over the support period, not only price.
-- Capital cost split by line (equipment, cabling, installation, services) so management sees what each part buys.
-- A revised proposal before signing, with warranty and support stated in writing.
+- Write a one-page document covering current state, problems, goals and scope, in non-technical language.
+- Get presentations from more than one integrator and vendor. Judge them on support terms, licence model, replacement cycle and total cost over the support period, not only price.
+- Split the capital cost by line (equipment, cabling, installation, services) so management sees what each part buys.
+- Ask for a revised proposal before signing, with warranty and support stated in writing.
 
 ## Cut-over plan (example: 30 days)
 
-- **Before:** staff test remote working and VPN in advance; password changes are done beforehand.
-- **During:** a small temporary space with working connectivity for urgent cases; desk phones replaced by the collaboration platform on laptops and mobiles; data-center applications stay available.
+- **Before:** staff test remote working and VPN in advance, and password changes are done beforehand.
+- **During:** set up a small temporary space with working connectivity for urgent cases. Replace desk phones with the collaboration platform on laptops and mobiles. Keep data-center applications available.
 - **Work packages:** survey, design, cable paths and tests, installation and configuration, testing and acceptance, then integration with existing systems.
 - **Governance:** one project manager, a small project team and regular status reports.
 - **Team roster:** a weekly plan showing who works remotely, hybrid or on site, so cover is clear.
@@ -48,10 +48,10 @@ Equipment can keep working and still carry rising risk: vendor support has ended
 ## Lessons
 
 1. Frame renewal as risk and operating cost, not as a technology refresh.
-2. Ask for long support terms, not first-year price.
-3. Prepare people before the cut-over; most failures are people not being ready.
+2. Ask for long support terms, not the first-year price.
+3. Prepare people before the cut-over. Most failures are people not being ready.
 4. Keep the plan readable by someone outside IT.
-5. Separate what is planned from what is delivered when you report.
+5. When you report, separate what was planned from what was delivered.
 
 ## Reusable project charter outline
 

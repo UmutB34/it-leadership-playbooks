@@ -1,17 +1,17 @@
 # Running a full disaster recovery test: method and checklist
 
-*A reusable method. No organization, supplier or system is described; examples are generic.*
+*A reusable method. No organization, supplier or system is described; the examples are generic.*
 
 ## Why test
 
-'We replicate, so we can recover' is a belief until the whole environment has been run from the recovery site and brought back. A full test shows dependencies that single-system tests hide, and it gives the recovery targets (RTO and RPO) real inputs instead of assumptions.
+"We replicate, so we can recover" is only a belief until you have run the whole environment from the recovery site and brought it back. A full test shows dependencies that single-system tests hide. It also gives the recovery targets (RTO and RPO) real inputs instead of assumptions.
 
 ## What a full test proves
 
-- Applications that look independent but share a login, a license or a network rule.
-- Network routing and name resolution work from the recovery site in both directions.
-- Services are reachable by the people who need them, not only running.
-- Users, business owners and auditors can see evidence, not only engineers.
+- Which applications look independent but share a login, a license or a network rule.
+- That network routing and name resolution work from the recovery site, in both directions.
+- That services are reachable by the people who need them, not just running.
+- That users, business owners and auditors can see evidence, not only engineers.
 
 ## Options
 
@@ -23,13 +23,13 @@
 
 ## Method
 
-1. **Scope.** List every system in scope, its owner, its dependencies and its start-up order.
-2. **Define 'working'.** For each system, write the check that proves it works for a user, before the test.
+1. **Scope.** List every system in scope with its owner, its dependencies and its start-up order.
+2. **Define "working".** Before the test, write down for each system the check that proves it works for a user.
 3. **Prepare the plan.** Order of steps, people on the call, communication plan, stop criteria and a rollback decision point.
-4. **Prepare the network.** The routing and firewall changes needed at the recovery site, reviewed beforehand.
+4. **Prepare the network.** Review beforehand the routing and firewall changes needed at the recovery site.
 5. **Run the failover** in a controlled order, with a timekeeper and a log.
-6. **Verify each system** against its definition of working and capture evidence as you go.
-7. **Fail back** and verify again; allow time for data resynchronization.
+6. **Verify each system** against its definition of working, and capture evidence as you go.
+7. **Fail back** and verify again. Allow time for data resynchronization.
 8. **Report the same day,** then issue an action list with owners.
 
 ## Dependency categories to inventory
@@ -45,20 +45,20 @@ These are common sources of surprises in any environment:
 
 ## Roles
 
-Incident-style roles keep a long day under control: test lead, technical leads per area, supplier contacts, verifiers from the business, a timekeeper and a communicator.
+Incident-style roles keep a long day under control: a test lead, technical leads per area, supplier contacts, verifiers from the business, a timekeeper and a communicator.
 
 ## Evidence
 
-For every system record time, result, verifier and a screenshot or log. Reconstructing evidence later rarely works.
+For every system, record the time, the result, the verifier and a screenshot or log. Reconstructing evidence later rarely works.
 
 ## The report
 
-One page for management: scope, what was confirmed, how long it took, what will be improved. Details for engineers as an appendix. Include a recommendation for the test cycle.
+Give management one page: scope, what was confirmed, how long it took and what will be improved. Put the details for engineers in an appendix. Include a recommendation for the test cycle.
 
 ## Lessons for any team
 
 1. Test with everyone in the room: suppliers, business verifiers and the person who decides to stop.
-2. Write what working means before the test.
+2. Write down what "working" means before the test.
 3. Collect evidence while testing.
 4. Count the dependencies you cannot see.
 5. Treat the report as a product.
