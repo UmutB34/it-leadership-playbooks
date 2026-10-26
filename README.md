@@ -22,6 +22,7 @@ Downloadable files in [templates/](templates/): an IT budget sheet, a KPI sheet,
 | [Awareness program design](case-studies/06-security-awareness-program-design.md) | Training and phishing simulation that an auditor accepts |
 | [Logging and guest Wi-Fi design](case-studies/07-compliance-logging-and-guest-wifi-design.md) | Designing a firewall edge under a logging law |
 | [Comparing sites](case-studies/08-comparing-sites-to-set-an-infrastructure-baseline.md) | Using your own sites as a benchmark to set a baseline |
+| [Weekend mail and file migration](case-studies/09-weekend-mail-and-file-migration.md) | Moving a group of users between suites over one weekend, and what we learned |
 
 ## Playbooks
 
