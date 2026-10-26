@@ -40,6 +40,39 @@ Reading the table: the method is a practical, day-to-day expression of change en
 **Risks that remain:** many small migrations create a patchwork; the catalog goes stale; people leave and the method goes with them.
 **Improve:** review the portfolio yearly for consolidation and retirement; keep the templates under version control; write the closing review in two pages, not twenty; measure a few things consistently.
 
+## 2b. Which lens for which question
+
+No single framework covers a head of IT. Each one answers a different question, and trouble starts when one lens is used for all of them.
+
+| Question | Lens that fits best | What it gives | What it does not give |
+|---|---|---|---|
+| How do we run this service day to day? | ITIL 4 | Practices for change, incident, release, continuity, improvement | Board-level accountability, deep security design |
+| How do we show the board and auditors that IT is governed? | COBIT 2019 | Objectives, ownership, performance measures, evidence | Step-by-step operating method |
+| Is the security decision sound? | CISSP vocabulary, ISO/IEC 27001 | Risk thinking, architecture, access, operations, a control catalog | Project scheduling or service operations detail |
+| How do we deliver this as a project? | PMBOK or PRINCE2 | Stakeholders, schedule, risk, change control, closure | Technical correctness |
+
+A workable habit: look at every significant job in the same four steps. (1) What business outcome does it serve? (2) What is the risk and who owns it? (3) What happens to the service while we do it, and how do we get back? (4) What evidence will exist afterwards?
+
+## 2c. Where viewpoints usually disagree (gaps)
+
+| Gap | Typical symptom | How to close it |
+|---|---|---|
+| Operations versus security | Security asks for a control that breaks a workflow; operations postpones it | Agree a tolerance tier and a date, with an owner for any exception |
+| IT versus business unit | IT picks the window; the unit has a peak that week | Ask the five tolerance questions first |
+| Project versus service | The project closes, nobody owns the new service | Name the service owner and runbook before go-live |
+| Governance versus delivery | Reports show green while teams struggle | Add a few measured indicators, and review the closing report honestly |
+| Framework versus practice | Processes exist on paper, nobody follows them | Fewer processes, each with an owner and a measured result |
+| Short-term cost versus long-term risk | Cheapest option chosen, exit costs ignored | State the exit cost and the rollback cost in the decision paper |
+
+## 2d. Standards to read first for this kind of role
+
+- ITIL 4 (service management practices), for the operating vocabulary.
+- COBIT 2019 (governance and management objectives), for board and audit conversations.
+- ISO/IEC 27001 and 27002, as the usual security management reference for audits.
+- NIST Cybersecurity Framework, as a common risk language, especially outside Turkey.
+- PMBOK (or PRINCE2), for project delivery.
+- CISSP common body of knowledge, as a broad security management reference even without the certificate.
+
 ## 3. A short measurement set
 
 | Measure | Why |
