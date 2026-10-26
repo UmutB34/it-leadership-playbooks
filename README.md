@@ -37,6 +37,15 @@ Downloadable files in [templates/](templates/): an IT budget sheet, a KPI sheet,
 | [it-separation-for-a-divested-asset](playbooks/it-separation-for-a-divested-asset.md) | Rebuilding IT as a standalone environment |
 | [multi-site-standardization](playbooks/multi-site-standardization.md) | Bringing several sites onto one standard stack |
 | [planned-shutdown-and-startup](playbooks/planned-shutdown-and-startup.md) | Safe order for switching an environment off and on |
+| [project-migration-method](playbooks/project-migration-method.md) | Planning migrations by business-unit tolerance: tiers, waves, windows, rollback |
+| [file-server-and-dfs-migration](playbooks/file-server-and-dfs-migration.md) | Moving shares behind a namespace with owner-reviewed permissions |
+| [file-access-review-by-owner](playbooks/file-access-review-by-owner.md) | Business owners confirming who has access to their folders |
+| [mail-and-collaboration-migration](playbooks/mail-and-collaboration-migration.md) | Moving mail and files between suites without losing users |
+| [telephony-cutover](playbooks/telephony-cutover.md) | Splitting or replacing a telephone system |
+| [migration-project-catalog](playbooks/migration-project-catalog.md) | Twenty migration project types with tolerance, window and rollback idea |
+| [migration-frameworks-and-perspectives](playbooks/migration-frameworks-and-perspectives.md) | The method against ITIL, COBIT, PMBOK, CISSP and ISO 27001, from four viewpoints |
+| [migration-automation-and-llm-operations](playbooks/migration-automation-and-llm-operations.md) | Removing human traffic with automation; running AI under human gates |
+| [private-ai-and-data-security-for-listed-companies](playbooks/private-ai-and-data-security-for-listed-companies.md) | Closed-environment AI and data classes for listed companies |
 | [references](playbooks/references.md) | Frameworks and standards used as vocabulary |
 
 ## Academic work
