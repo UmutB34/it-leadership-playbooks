@@ -1,0 +1,56 @@
+# it-leadership-playbooks
+
+> Vendor-neutral operating notes and templates for running enterprise IT: infrastructure, security, service management, budget and governance.
+
+## What it is
+
+Short, practical documents written from twenty years of IT operations. Each one states the goal, the method, the measures and how to prove it works. They are written fresh and generalized: no organization, supplier, system or amount is described.
+
+## Method notes
+
+| Note | What it covers |
+|---|---|
+| [Disaster recovery test](case-studies/01-disaster-recovery-test.md) | Planning, running and reporting a full recovery test |
+| [IT scorecard](case-studies/02-it-kpi-scorecard.md) | Building a KPI card on independent evidence |
+| [Network renewal](case-studies/03-office-network-renewal.md) | Making the decision and running the cut-over |
+
+## Playbooks
+
+| Playbook | What it covers |
+|---|---|
+| [it-budget-model](playbooks/it-budget-model.md) | OPEX and CAPEX structure, drivers, unit costs, negotiation levers |
+| [itsm-and-service-desk](playbooks/itsm-and-service-desk.md) | Incident, request, change, problem and asset processes, service levels |
+| [daily-operations-checklist](playbooks/daily-operations-checklist.md) | A daily routine for a small IT team |
+| [endpoint-operations](playbooks/endpoint-operations.md) | Device lifecycle, device management, travel kits, records |
+| [patch-management](playbooks/patch-management.md) | Rings, target times, exceptions, evidence |
+| [vulnerability-management-and-testing](playbooks/vulnerability-management-and-testing.md) | Scanning, ranking, managing penetration tests |
+| [security-hardening-baseline](playbooks/security-hardening-baseline.md) | Layered baseline controls and rollout |
+| [audit-readiness](playbooks/audit-readiness.md) | Evidence map, answering questions, tracking actions |
+| [it-process-internal-audit-checklist](playbooks/it-process-internal-audit-checklist.md) | Auditing IT processes and documents |
+| [it-kpi-catalog](playbooks/it-kpi-catalog.md) | KPI fields and example indicators |
+| [vendor-management](playbooks/vendor-management.md) | Supplier lifecycle, tiers, register, reviews |
+| [infrastructure-project-workplan](playbooks/infrastructure-project-workplan.md) | Work plan and team roster for a multi-week change |
+| [it-separation-for-a-divested-asset](playbooks/it-separation-for-a-divested-asset.md) | Rebuilding IT as a standalone environment |
+| [multi-site-standardization](playbooks/multi-site-standardization.md) | Bringing several sites onto one standard stack |
+| [planned-shutdown-and-startup](playbooks/planned-shutdown-and-startup.md) | Safe order for switching an environment off and on |
+| [references](playbooks/references.md) | Frameworks and standards used as vocabulary |
+
+## Academic work
+
+Coursework from an MSc in Computer Engineering, presented as such: [academic](academic/README.md).
+
+## Related
+
+- [enterprise-infrastructure-lab](https://github.com/UmutB34/enterprise-infrastructure-lab): layered architecture, quality engineering and agent-engine design for a small engineering lab.
+- [security-operations-toolkit](https://github.com/UmutB34/security-operations-toolkit): defensive, read-only checks for a domain's external security posture.
+- [Korantix](https://korantix.io): domain and e-mail security monitoring.
+
+## About
+
+Umut Becan. IT infrastructure, security and service operations. [LinkedIn](https://www.linkedin.com/in/umutbecan)
+
+## Sanitization
+
+See [REDACTION.md](REDACTION.md).
+
+Licensed under the MIT License.
