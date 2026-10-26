@@ -6,6 +6,10 @@
 
 Short, practical documents written from twenty years of IT operations. Each one states the goal, the method, the measures and how to prove it works. They are written fresh and generalized: no organization, supplier, system or amount is described.
 
+## Templates
+
+Downloadable files in [templates/](templates/): an IT budget sheet, a KPI sheet, a change request and a vendor review checklist.
+
 ## Method notes
 
 | Note | What it covers |
