@@ -17,6 +17,11 @@ Downloadable files in [templates/](templates/): an IT budget sheet, a KPI sheet,
 | [Disaster recovery test](case-studies/01-disaster-recovery-test.md) | Planning, running and reporting a full recovery test |
 | [IT scorecard](case-studies/02-it-kpi-scorecard.md) | Building a KPI card on independent evidence |
 | [Network renewal](case-studies/03-office-network-renewal.md) | Making the decision and running the cut-over |
+| [Responding to an IT audit](case-studies/04-responding-to-an-it-audit.md) | Turning an audit report into one tracked plan with owners and dates |
+| [Managed-services cost review](case-studies/05-reviewing-a-managed-services-model.md) | Keeping per-unit service costs visible and negotiable |
+| [Awareness program design](case-studies/06-security-awareness-program-design.md) | Training and phishing simulation that an auditor accepts |
+| [Logging and guest Wi-Fi design](case-studies/07-compliance-logging-and-guest-wifi-design.md) | Designing a firewall edge under a logging law |
+| [Comparing sites](case-studies/08-comparing-sites-to-set-an-infrastructure-baseline.md) | Using your own sites as a benchmark to set a baseline |
 
 ## Playbooks
 
