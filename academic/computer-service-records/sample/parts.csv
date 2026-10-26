@@ -1,0 +1,4 @@
+code,name,buy,sell,stock,min
+HDD1T,HDD 1TB 2.5in,950,1300,3,1
+FAN15,Laptop fan,180,300,5,2
+BAD1,Broken row,abc,100,1,1

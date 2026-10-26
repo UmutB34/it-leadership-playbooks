@@ -1,0 +1,4 @@
+phone,kind,brand,model,serial,accessories
+0534 777 88 99,laptop,Acme,B14,AC14-7788,charger
+0535 888 99 00,printer,Inkly,P2,IP2-0042,
+0999 000 11 22,laptop,Acme,B14,NOPE-1,unknown customer on purpose
