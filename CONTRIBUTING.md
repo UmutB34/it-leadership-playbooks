@@ -1,0 +1,9 @@
+# Contributing
+
+This repository holds case studies and templates from enterprise IT operations. Helpful contributions:
+
+- Corrections: a wrong fact, a broken link, an outdated recommendation (say what source shows it).
+- A short case study or checklist from your own experience, **sanitized** (no company, person, host or address names; see REDACTION.md or the sanitization section of the README).
+- Clearer wording or a missing "how to check it works" step.
+
+Rules: one change per pull request; run `python -m unittest discover -s tests` and `python scripts/check_redaction.py .` first; no copied text without a license and citation; no unverifiable claims. Open an issue before anything large. One maintainer, so replies can take a few days.
