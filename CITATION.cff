@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use these materials, please credit them as below (CC BY 4.0)."
+title: "IT Leadership Playbooks"
+type: dataset
+authors:
+  - family-names: Becan
+    given-names: Umut
+repository-code: "https://github.com/UmutBecan/it-leadership-playbooks"
+url: "https://github.com/UmutBecan/it-leadership-playbooks"
+license: CC-BY-4.0

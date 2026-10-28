@@ -27,4 +27,6 @@ Her belge kısa tutuldu: amaç, yöntem, nasıl ölçülür, neyi yanlış yapma
 
 Umut Becan — BT altyapı, güvenlik ve hizmet operasyonları. LinkedIn profilimden ulaşabilirsiniz.
 
-Lisans: MIT.
+## Lisans
+Belgeler: [CC BY 4.0](LICENSE). **Kaynak göstermek zorunludur**, ifade için [ATTRIBUTION.md](ATTRIBUTION.md) dosyasına bakın.
+Yazılım (`scripts/`, `tests/`, `academic/computer-service-records/`): [MIT](LICENSE-CODE).

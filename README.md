@@ -72,4 +72,6 @@ Umut Becan. IT infrastructure, security and service operations. [LinkedIn](https
 
 See [REDACTION.md](REDACTION.md).
 
-Licensed under the MIT License.
+## License
+Documents: [CC BY 4.0](LICENSE). **Attribution is required**, see [ATTRIBUTION.md](ATTRIBUTION.md) for the wording.
+Software (`scripts/`, `tests/`, `academic/computer-service-records/`): [MIT](LICENSE-CODE).

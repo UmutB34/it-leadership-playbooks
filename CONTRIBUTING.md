@@ -7,3 +7,5 @@ This repository holds case studies and templates from enterprise IT operations. 
 - Clearer wording or a missing "how to check it works" step.
 
 Rules: one change per pull request; run `python -m unittest discover -s tests` and `python scripts/check_redaction.py .` first; no copied text without a license and citation; no unverifiable claims. Open an issue before anything large. One maintainer, so replies can take a few days.
+
+By contributing you agree that your documents are licensed under CC BY 4.0 and your code under MIT, as described in ATTRIBUTION.md.
